@@ -1,5 +1,7 @@
 package app.model;
 
+import java.time.LocalDateTime;
+
 public class Timer {
 
     private Long nanoTime = System.nanoTime();
@@ -7,4 +9,6 @@ public class Timer {
     public Long getTime() {
         return nanoTime;
     }
+
+
 }
