@@ -1,12 +1,13 @@
 package app.model;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Cat extends Animal {
     private String saing;
 
-    public Cat(String saing) {
+    public Cat(@Value("myau-myau") String saing) {
         this.saing = saing;
     }
     @Override

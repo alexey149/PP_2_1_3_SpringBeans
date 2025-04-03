@@ -1,5 +1,6 @@
 package app.model;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -7,7 +8,7 @@ public class Dog extends Animal {
     private String saing;
 
 
-    public Dog(String saing) {
+    public Dog(@Value("gav-gav") String saing) {
         this.saing = saing;
     }
     @Override
