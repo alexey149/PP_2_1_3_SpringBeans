@@ -4,10 +4,11 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Cat extends Animal {
+public class Dog extends Animal {
     private String saing;
 
-    public Cat(@Value("myau-myau") String saing) {
+
+    public Dog(@Value("gav-gav") String saing) {
         this.saing = saing;
     }
     @Override
@@ -16,8 +17,6 @@ public class Cat extends Animal {
     }
     @Override
     public String toString() {
-        return "Im a Cat";
+        return "Im a Dog";
     }
-
-
 }
